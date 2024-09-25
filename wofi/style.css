@@ -1,0 +1,46 @@
+window {
+	margin: 5px;
+	background-color: #32312e;
+	border-radius: 50px;
+	opacity: 1;
+}
+
+#input {
+	margin: 20px;
+	background-color: black;
+	border-radius: 25px;
+	padding: 10px;
+	color: white;
+}
+
+#inner-box {
+	margin: 5px;
+}
+
+#outer-box {
+	margin: 20px;
+}
+
+#scroll {
+	margin: 20px;
+	border-radius: 25px;
+}
+
+#entry {
+	background-color: #FFD300;
+	border-radius: 25px;
+	margin: 15px 0px;
+	padding: 10px;
+}
+
+#text {
+	margin: 5px;
+}
+
+#entry:selected {
+	background-color: #ffe566;
+}
+
+#text:selected {
+	color: black;
+}

@@ -1,0 +1,96 @@
+* {
+    font-family: hack, iosevka, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+window#waybar {
+    background-color: #32312e;
+    color: white;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+.modules-left,
+.modules-right {
+    padding: 0px 10px;
+}
+
+#workspaces button {
+    border-radius: 0;
+    color: white;
+    margin: 0px 5px;
+    padding: 0px;
+}
+
+#workspaces button.active {
+    color: #FFD300;
+    text-decoration: underline;
+}
+
+#workspaces button.urgent {
+    color: #eb4d4b;
+}
+
+#workspaces button:hover {
+    border: none;
+    outline: none;
+    background: none;
+    transition: none;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#power,
+#custom-power {
+    padding: 7px 10px;
+    color: #FFD300;
+    opacity: 1;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#custom-media {
+    min-width: 100px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #26A65B;
+}
+
+#temperature.critical {
+    color: #eb4d4b;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+}
